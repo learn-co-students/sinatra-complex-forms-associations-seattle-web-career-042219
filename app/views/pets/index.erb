@@ -1,1 +1,4 @@
-index.erb
+<h2>All Pets:</h2>
+<% @pets.each.with_index(1) do |p, i| %>
+	<p><%= "#{i}: #{p.name}" %></p>
+<% end %>
